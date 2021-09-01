@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./array.css">
+<title>Document</title>
+</head>
+<body>
+   <section class="main">
+   <div  id="result"></div>
+   <button onclick="showNames()">Show Names</button>
+</section>
+
+
+<script>
+{
+   const myFriends = ["Sajid","Abhijeet","Suraj","Naman"];
+   function showNames(){
+      myFriends.forEach(friend => {
+         document.getElementById('result').innerHTML += `${friend} <br><br>`;
+         
+      });
+   };
+}
+</script>
+</body>
+</html>
